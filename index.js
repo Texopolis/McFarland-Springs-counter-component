@@ -1,41 +1,34 @@
 const counter = document.getElementById('counter')
-const startDate = 2012
-let num = 10
+let num = 0
 const app = document.getElementById('app')
 
 //inject an incremental counter that updates continuously and displays a number
 
-const incrementCounter= ()=>{
-    setInterval(()=>{
+const incrementCounter = () => {
+    setInterval(() => {
 
         //https://www.epochconverter.com/
         //convert trout farm opening date to Epoch timestamp -const startTime
         //=1352414990000
 
-const startTime = 1352414990000
+        const startTime = 1352414990000
 
-//current epoch time
+        //current epoch time
 
-let currentTime = Date.now()
+        let currentTime = Date.now()
 
-let timeElapsed= currentTime - startTime
+        let timeElapsed = currentTime - startTime
 
-        let num= timeElapsed * .000221
-        let finalNum=num.toLocaleString(undefined,
-            {'minimumFractionDigits':3,'maximumFractionDigits':3})
-    
-        // counter.innerHTML = num2
+        let num = timeElapsed * .000221
+        let finalNum = num.toLocaleString(undefined, {
+            'minimumFractionDigits': 3,
+            'maximumFractionDigits': 3
+        })
 
-
-        app.innerHTML=`Since opening the farm, ${finalNum} wild fish have been saved from becoming fish food`
+        app.innerHTML = `Since opening the farm, ${finalNum} wild fish have been saved from becoming fish food`
 
     }, 2000)
-
-
-
-    // app.innerHTML=`Since opening the farm, ${num2} wild fish have been saved from becoming fish food`
-
-    }
+}
 incrementCounter()
 
 
@@ -59,13 +52,12 @@ incrementCounter()
 
 
 
- //get todays day, month, year and store in variable
+//get todays day, month, year and store in variable
 
- let dateObj = new Date();
- let month = dateObj.getUTCMonth() + 1; //months from 1-12
- let day = dateObj.getUTCDate();
- let year = dateObj.getUTCFullYear();
- 
- newdate = year + "/" + month + "/" + day;
- console.log(newdate)
- 
+// let dateObj = new Date();
+// let month = dateObj.getUTCMonth() + 1; //months from 1-12
+// let day = dateObj.getUTCDate();
+// let year = dateObj.getUTCFullYear();
+
+// newdate = year + "/" + month + "/" + day;
+// console.log(newdate)

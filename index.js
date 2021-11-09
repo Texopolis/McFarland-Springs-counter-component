@@ -21,8 +21,8 @@ const incrementCounter = () => {
 
         let num = timeElapsed * .000221
         let finalNum = num.toLocaleString(undefined, {
-            'minimumFractionDigits': 3,
-            'maximumFractionDigits': 3
+            'minimumFractionDigits': 1,
+            'maximumFractionDigits': 1
         })
 
         app.innerHTML = `Since opening the farm, ${finalNum} wild fish have been saved from becoming fish food`

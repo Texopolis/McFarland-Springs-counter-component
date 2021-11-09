@@ -27,7 +27,7 @@ const incrementCounter = () => {
 
         app.innerHTML = `Since opening the farm, ${finalNum} wild fish have been saved from becoming fish food`
 
-    }, 2000)
+    }, 100)
 }
 incrementCounter()
 

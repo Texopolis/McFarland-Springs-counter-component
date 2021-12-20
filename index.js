@@ -9,9 +9,9 @@ const incrementCounter = () => {
 
         //https://www.epochconverter.com/
         //convert trout farm opening date to Epoch timestamp -const startTime
-        //=1352414990000
+        //=1352414990000 (Jan 1 2010)
 
-        const startTime = 1352414990000
+        const startTime = 1262304000000
 
         //current epoch time
 
@@ -19,7 +19,7 @@ const incrementCounter = () => {
 
         let timeElapsed = currentTime - startTime
 
-        let num = timeElapsed * .000221
+        let num = timeElapsed * .000144
         let finalNum = num.toLocaleString(undefined, {
             'minimumFractionDigits': 1,
             'maximumFractionDigits': 1
@@ -37,14 +37,14 @@ incrementCounter()
 
 
 
-//how many fish per milisecond?  .000221
-//how many fish per second?      .22
-//how many fish per minute?    13.31
-//how many fish per day?   19,178
-//how many fish per year? 7,000,000
+//how many fish per milisecond?  .000144
+//how many fish per second?      .14
+//how many fish per minute?    8.68
+//how many fish per day?   12,505
+//how many fish per year? 4,564,310
 
-//for every milisecond increment by .000221
-//timeElapsed * .000221
+//for every milisecond increment by .000144
+//timeElapsed * .000144
 
 
 
